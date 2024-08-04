@@ -1,13 +1,23 @@
 const container = document.querySelector(".container");
 let div2Array = [];
 const resetBtn = document.querySelector("#reset"); 
+const configureBtn = document.querySelector("#configure");
+let rows = 16;
+let columns = 16;
+
+function getGridSize() {
+    rows = prompt("enter number of rows");
+    columns = prompt("enter number of columns");
+}
+
+configureBtn.addEventListener('click', ()=> getGridSize());
 
 
-for (let i=0; i<16; i++) {
+for (let i=0; i<rows; i++) {
     let div = document.createElement("div")  
     container.appendChild(div);
 
-        for (let j=0; j<16; j++) {
+        for (let j=0; j<columns; j++) {
 
             let div2 = document.createElement("div");
             div.appendChild(div2);
