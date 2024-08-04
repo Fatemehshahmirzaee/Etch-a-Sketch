@@ -1,5 +1,7 @@
 const container = document.querySelector(".container");
 let div2Array = [];
+const resetBtn = document.querySelector("#reset"); 
+
 
 for (let i=0; i<16; i++) {
     let div = document.createElement("div")  
@@ -13,13 +15,30 @@ for (let i=0; i<16; i++) {
         }       
 }
 
-for (let d of div2Array) {
-    d.addEventListener('click' , () => {
+resetBtn.addEventListener('click' , ()=>{
 
-        selectedArray.push(d)
+    for (let d of div2Array) {
+        d.style.backgroundColor = 'rgb(251, 220, 225)';
+        let selectedArray = [];
+    } 
+
+})
+
+let selectedArray = [];
+
+for (let d of div2Array) {
+
+    d.addEventListener('click' , () => {
+        selectedArray.push(d);
         d.style.backgroundColor = 'red';
     })
-} 
+}
+
+
+
+
+
+
 
 
 
