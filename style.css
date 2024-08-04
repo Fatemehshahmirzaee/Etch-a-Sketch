@@ -1,31 +1,18 @@
 div.container {
     border: 1px dashed black;
+    background-color: pink;
     border-radius:10px;
     max-width: 1600;
-    height: auto;
-    padding:20px;
-    margin: auto;
-    max-width: 800px;
+    display: flex;
+    height: 100px;
     margin-top: 30px;
-    background-color: pink;
+    flex-wrap: wrap;
+    height: 800px;
 
 }
 
-.container div {
-    margin:5px;
-    height: 30px;
-    text-align: center;
-}
 
-.container div  div{
-    background-color: rgb(251, 220, 225);
-    border-radius: 100%;
-    margin:5px;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    margin: 5px;
-}
-.container div div:hover {
-    background-color: red;
+.grid-square {
+    background-color: white;
+    border-radius: 5px;
 }
