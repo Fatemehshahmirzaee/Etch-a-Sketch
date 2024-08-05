@@ -10,7 +10,10 @@ function getGridSize() {
     }
 }
 
-configureBtn.addEventListener('click', ()=> getGridSize());
+configureBtn.addEventListener('click', ()=> {
+    getGridSize();
+});
+
 
 function getRandomColor() {
     const r = Math.floor(Math.random() * 256);
@@ -25,6 +28,7 @@ function changeColor(square) {
 
 
 function createGrid(size) {
+
     for (let i = 0; i < size * size; i++) {
         const square = document.createElement('div');
         square.classList.add('grid-square');
@@ -36,8 +40,7 @@ function createGrid(size) {
 }
 
 
-createGrid(size)
- 
+ createGrid(size)
 
 
 
