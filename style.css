@@ -2,12 +2,14 @@ div.container {
     border: 1px dashed black;
     background-color: pink;
     border-radius:10px;
-    max-width: 1600;
+    max-width: 800;
     display: flex;
     height: 100px;
     margin-top: 30px;
     flex-wrap: wrap;
     height: 800px;
+    margin-left: auto;
+
 
 }
 
